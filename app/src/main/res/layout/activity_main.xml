@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp">
+
+        <ImageButton
+            android:id="@+id/ar2"
+            android:onClick="changephoto"
+            android:src="@drawable/arrow_left"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/circle"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/pf1"
+            android:layout_width="142dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/circle"
+            android:clipToOutline="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile" />
+
+        <ImageButton
+            android:id="@+id/ar1"
+            android:onClick="changephoto"
+            android:src="@drawable/arrow_right"
+            android:layout_width="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/circle"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:layout_height="70dp" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Full Name" />
+
+    <EditText
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:hint="Role/Bio"
+        android:ems="10">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="3dp"
+        android:text="Radio Group"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn1"
+            android:onClick="changefont"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:fontFamily="serif"
+            android:text="Serif" />
+
+        <RadioButton
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:onClick="changefont"
+            android:textStyle="bold"
+            android:text="bold" />
+
+        <RadioButton
+            android:text="monospace"
+            android:id="@+id/btn3"
+            android:fontFamily="monospace"
+            android:onClick="changefont"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dark mode"
+            android:textSize="20dp" />
+
+        <Switch
+            android:id="@+id/darkMode"
+            android:layout_width="138dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="167dp"
+            android:text="" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:text="CREATE CARD"
+        android:onClick="changeScreen"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
